@@ -1,0 +1,140 @@
+body {
+    background-color:  #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .info {
+
+    margin: left;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    color: #959595;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    margin-left: 50px;
+
+
+}
+
+.titre {
+
+    margin: auto;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    text-align: left;
+    font-size: 48px;
+    color: #000000; 
+    font-weight: 800;
+    text-transform: capitalize;
+    display: flex;
+    margin-top: 10px;
+    letter-spacing: -1px;
+    font-family: sans-serif;
+    margin-left: 50px;
+
+}
+
+
+.titre_description {
+
+    margin: auto;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 150;
+    display: flex;
+    margin-top: 30px;
+    line-height: 30px;
+    margin-left: 50px;
+
+}
+  .card-title {
+   
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      color:#000000;
+  }
+
+.card-block .description{
+    color: #000000;
+    font-size: 13px;
+    display: flex;
+    text-align: left;
+}
+
+  .card-block {
+      font-size: 1em;
+      position: relative;
+      margin: 0;
+      padding: 1em;
+      border: none;
+      box-shadow: none;
+      background-color: #fff;      
+      
+       
+  }
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+  
+  
+    .card {
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(153, 153, 153, 0.1);
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: 10px;
+    margin-top:20px;
+    width: 30%;
+    margin-left: 200px;
+    transition: transform 0.5s;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.card:hover{
+    transform: translateY(-10px);}
+
+
+.image-event {
+
+    width: 100%;
+}
+
+.button{
+    width: 180px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 12px 0;
+    background: linear-gradient(to right, #c57171, #812828);
+    border-radius: 20px;
+    border: none ;
+    transition: color 0.3s ease-in-out;
+    margin-top: 10px;
+
+}
+
+.button:hover {
+
+    color: #fff;
+    background: #999;
+}

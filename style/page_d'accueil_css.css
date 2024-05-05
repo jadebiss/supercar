@@ -1,0 +1,139 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+}
+
+.col {
+  flex-basis: 50%;
+  margin-left: 80px;
+}
+
+h1 {
+  color: black;
+  font-size: 45px;
+}
+
+.description {
+  color: black;
+  font-size: 13px;
+}
+
+button {
+  width: 180px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  padding: 12px 0;
+  background: linear-gradient(to right, #c57171, #812828);
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+  transition: color 0.3s ease-in-out;
+}
+
+button:hover {
+  color: #fff;
+  background: #999;
+}
+
+.card {
+  width: 250px;
+  display: inline-block;
+  color:#f4f4f4;
+  border-radius: 10px;
+  padding: 25px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  box-shadow: 0 0 20px 9px #e0e0e0;
+}
+
+.image-card {
+  width: 200px;
+  height: 150px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Carousel */
+.mySlides {
+  display: none}
+
+img {
+  vertical-align: middle;}
+
+.slideshow-container {
+max-width: 80%;
+position: relative;
+margin: auto;}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;}
+
+.prev:hover, .next:hover {
+background-color: #812828;}
+
+.numbertext{
+color: white;
+font-size: 12px;
+padding: 8px 12px;
+position:absolute;
+top: 0;}
+
+.dot{
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: black;
+border-radius: 50%;
+display: inline-block;
+transition: background-color #812828 0.6 ease;}
+
+.active, .dot:hover{
+background-color: #812828;}
+
+.fade{
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;}
+
+@media only screen and (max-width:300px){
+
+.dot{
+  height: 10px;
+  width: 10px}}
+
