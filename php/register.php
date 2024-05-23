@@ -17,12 +17,12 @@ $num = mysqli_num_rows($curseur);
 
 if ($num == 1) {
   echo "<script>alert('Ce nom d'utilisateur est deja pris');</script>";
-  header("Refresh: 0; URL='../php/supercar_connexion.php'");
+  header("Refresh: 0; URL='php/supercar_connexion.php'");
 } else {
   $reg = "INSERT INTO inscription(nom_utilisateur, nom, prenom, adresse_mail_client, telephone, mot_de_passe) VALUES ('$nom_utilisateur', '$nom', '$prenom', '$adresse_mail_client', '$telephone', '$mot_de_passe')";
   mysqli_query($bdd,$reg);
   echo "<script>alert('Bienvenue, Vous etes en ligne');</script>";
-  header("Refresh: 0; URL='../php/supercar_connexion.php'");
+  header("Refresh: 0; URL='php/supercar_connexion.php'");
 }
 
 mysqli_free_result($curseur);
@@ -30,4 +30,3 @@ mysqli_free_result($curseur);
 mysqli_close($bdd);
 
 ?>
-

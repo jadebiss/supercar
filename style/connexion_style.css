@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+    background-color: #d2d2d2;
   }
   
   .espace-connexion {
@@ -49,7 +49,7 @@ body {
   position: absolute;
   width: 120px;
   height: 100%;
-  background: linear-gradient(to right, #af3838, #812828);
+  background: #8e0000;
   border-radius: 30px;
   transition: .5s;
   display: inline-block;
@@ -83,18 +83,19 @@ body {
   padding: 15px 30px;
   display: block;
   margin: auto;
-  background: linear-gradient(to right, #af3838, #812828);
+  background: #8e0000;
   outline: none;
   border: none;
   border-radius: 30px;
   transition: color 0.3s ease-in-out;
+  color: #ffff;
 
 }
 
 
 .submit-btn:hover {
 
-  background: #af3838;
+  background: #999;
   color: #ffff;
 }
 

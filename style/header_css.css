@@ -27,6 +27,7 @@ header .logo {
 header nav ul {
   display: flex;
 }
+
 header nav ul li a {
   display: inline-block;
   color: #000;
@@ -34,6 +35,24 @@ header nav ul li a {
   margin: 0 27px;
   border: 3px solid transparent;
    transition: 0.2s;
+}
+
+.box {
+
+  display: inline-block;
+  color: #000;
+  padding: 5px 0;
+  border: 3px solid transparent;
+  transition: 0.2s;
+
+}
+
+.input-menu {
+
+  border-radius: 15px;
+  padding: 5px;
+  border-color: #000;
+
 }
 
 header nav ul li a.active {

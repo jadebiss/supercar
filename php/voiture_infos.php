@@ -22,8 +22,17 @@
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
+
+            <li>
+            <form method="POST" action="../php/search.php">
+            <div class="box">
+                <input class="input-menu" type="text" name="search_query" placeholder="Que cherchez-vous?">
+            </div>
+            </form>
+
+            </li>
                 <li>
-                    <a href="../php/supercar_voiture.php" >Nos voiture </a>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
                 </li>
                 <li>
                     <a href="../php/supercar_essai.php">Demande d'Essai </a>

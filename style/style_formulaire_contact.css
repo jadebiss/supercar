@@ -1,9 +1,8 @@
 body {
    margin: 0;
    padding: 0;
-   font-family: sans-serif;
+   font-family: 'Poppins', sans-serif;
    background-color: #f4f4f4;
-   color: #fff;
 }
 
 table {
@@ -12,17 +11,18 @@ margin-top: 35px;
 }
 
 .title {
-   font-size: 25px;
-   font-weight: 500;
+   font-size: xx-large;
+   font-weight: 600;
    margin: 5%;
-   color: #999;
+   color: #565656;
+   font-family: 'Poppins';
 }
 
 tr {
    width: 380px;
    height: 550px;
    margin: 6% auto;
-   background: #222222;
+   background: #e7e7e7;
    padding: 5px;
    border-radius: 35px;
 }
@@ -34,17 +34,17 @@ input, textarea {
    border-left: 0;
    border-top: 0;
    border-right: 0;
-   border-bottom: 1px solid #999;
+   border-bottom: 1px solid #000000;
    outline: none;
    background: transparent;
    margin-left: 13%;
    margin-top: 10px;
-   color: #999;
+   color: #000000;
 }
 
 input, textarea:hover {
 
-   color: #ffffff;
+   color: #737373;
 }
  
 iframe {
@@ -59,7 +59,7 @@ iframe {
    font-size: small;
    padding-top: 10px;
    margin-left: 13%;
-   color: #999;
+   color: #747474;
    margin-bottom: 10px;
 }
 
@@ -68,12 +68,13 @@ button {
    padding: 15px 30px;
    display: block;
    margin: auto;
-   background: linear-gradient(to right, #c57171, #812828);
+   background-color: #8e0000;
    outline: none;
    border: none;
    border-radius: 30px ;
    margin-top: 45px;    
    transition: color 0.3s ease-in-out;
+   color: #ffff;
 
 }
 

@@ -55,86 +55,76 @@ body {
     margin-top: 30px;
     line-height: 30px;
     margin-left: 50px;
+    margin-bottom: 80px;
 
 }
-  .card-title {
+
+.card-title {
    
-      margin-bottom: 50px;
-      text-transform: uppercase;
-      color:#000000;
-  }
-
-.card-block .description{
-    color: #000000;
-    font-size: 13px;
-    display: flex;
-    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
-  .card-block {
-      font-size: 1em;
-      position: relative;
-      margin: 0;
-      padding: 1em;
-      border: none;
-      box-shadow: none;
-      background-color: #fff;      
-      
-       
-  }
-  .scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-
-  }
-
-  .scrolling-wrapper::-webkit-scrollbar {
-      display: none;
-    }
-  
-  
-    .card {
-    display: inline-block;
-    color: #fff;
-    background-color: rgba(153, 153, 153, 0.1);
+.description{
+  color:rgb(0, 0, 0);
+  font-size: 13px;
+}
+.card-block {
     font-size: 1em;
-    overflow: hidden;
-    padding: 5;
+    position: relative;
+    margin: 0;
+    padding: 1em;
     border: none;
-    border-radius: 10px;
-    margin-top:20px;
-    width: 30%;
-    margin-left: 200px;
-    transition: transform 0.5s;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
+}
+.card {
+  color: #000000;
+  background-color:#ffffff;
+  font-size: 1em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  margin-top:20px;
+  width: 60%;
+  transition: transform 0.5s;
+  margin-bottom: 100px;
+  box-shadow: 0 0 20px 9px #e0e0e0;
+  text-align: left;
+
 }
 
 .card:hover{
-    transform: translateY(-10px);}
+  transform: translateY(-10px);}
 
 
 .image-event {
 
-    width: 100%;
+  width: 100%;
 }
 
 .button{
-    width: 180px;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    padding: 12px 0;
-    background: linear-gradient(to right, #c57171, #812828);
-    border-radius: 20px;
-    border: none ;
-    transition: color 0.3s ease-in-out;
-    margin-top: 10px;
+  width: 35%;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 12px 0;
+  background: #8e0000;
+  border-radius: 20px;
+  border: none ;
+  transition: color 0.3s ease-in-out;
+  margin-top: 30px;
+  align-self: center;
+  transition: color 0.3s ease-in-out;
+
 
 }
 
 .button:hover {
 
-    color: #fff;
-    background: #999;
+  color: #fff;
+  background: #999;
+  transition: color 0.3s ease-in-out;
+
 }

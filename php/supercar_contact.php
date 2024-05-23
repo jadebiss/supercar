@@ -4,9 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>Formulaire de contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style_formulaire_contact.css">
     <link rel="stylesheet" type="text/css" href="../style/header_css.css">
     <link rel="stylesheet" type="text/css" href="../style/footer_css.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap" rel="stylesheet">
  </head>
  <body>
 
@@ -21,7 +23,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="../php/supercar_voiture.php" >Nos voiture </a>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
                 </li>
                 <li>
                     <a href="../php/supercar_essai.php">Demande d'Essai </a>

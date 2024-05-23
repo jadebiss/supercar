@@ -36,17 +36,7 @@
                     <a href="php/supercar_contact.php"> Contactez-nous </a>
                 </li>
                 <li>
-                <?php
-                    session_start();
-
-                    if(isset($_SESSION['nom_utilisateur'])) {
-                        $nom_utilisateur = $_SESSION['nom_utilisateur'];
-                        echo " <a href='php/supercar_connexion.php' class='menu-icon'> $nom_utilisateur </a>";
-                        } else {
-                            echo "<a href='php/supercar_connexion.php' class='active'> Connexion </a></a>";                        
-                        }
-
-                ?>                 
+                    <a href='php/supercar_connexion.php' class='active'> Connexion </a></a>";                                     
                 </li>
             </ul>
         </nav>

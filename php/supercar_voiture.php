@@ -2,14 +2,12 @@
 <html>
 <head>
 	<title> Supercar - Voiture </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../style/voiture_style.css">
     <link rel="stylesheet" type="text/css" href="../style/header_css.css">
     <link rel="stylesheet" type="text/css" href="../style/footer_css.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        ScrollReveal({ reset: true }); 
-    </script>
+
 </head>
 
 <body>
@@ -18,14 +16,23 @@
 
 <header>
         <a href="../index.php">
-        <img src="../images/Supercar.png" alt="SuperCar logo" class="logo">
+        <img src="../images/logo.png" alt="SuperCar logo" class="logo">
         </a>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             
             <ul>
+
+            <li>
+            <form method="POST" action="../php/search.php">
+            <div class="box">
+                <input class="input-menu" type="text" name="search_query" placeholder="Que cherchez-vous?">
+            </div>
+            </form>
+
+            </li>
                 <li>
-                    <a href="../php/supercar_voiture.php" >Nos voiture </a>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
                 </li>
                 <li>
                     <a href="../php/supercar_essai.php">Demande d'Essai </a>
@@ -174,30 +181,6 @@ mysqli_free_result($result);
 mysqli_close($bdd);
 ?>
 
-
-<?php
-
-include("bdconnect.php");
-
-
-$adresseIP = $_SERVER['REMOTE_ADDR'];
-
-$sql = "INSERT INTO visites (adresse_ip) VALUES (?)";
-$stmt = $bdd->prepare($sql);
-
-$stmt->bind_param("s", $adresseIP);
-$stmt->execute();
-
-$sql = "SELECT COUNT(DISTINCT adresse_ip) as total FROM visites";
-$result = $bdd->query($sql);
-$resultat = $result->fetch_assoc();
-$nombre_visites = $resultat['total'];
-
-
-echo '<div class="visites">';
-echo "Supercar a reçu la visite de " . $nombre_visites . " visiteurs sur cette page";
-echo '</div>';
-?>
 
   <!--Partie du footer-->
   

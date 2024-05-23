@@ -33,10 +33,10 @@ h1 {
 
 button {
   width: 180px;
-  color: rgb(0, 0, 0);
+  color: #fff;
   font-size: 14px;
   padding: 12px 0;
-  background: linear-gradient(to right, #c57171, #812828);
+  background: #8e0000;
   border-radius: 20px;
   border: none;
   margin-top: 30px;
@@ -46,6 +46,7 @@ button {
 button:hover {
   color: #fff;
   background: #999;
+  transition: background-color 0.3s, color 0.3s ease-in-out;
 }
 
 .card {

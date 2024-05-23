@@ -3,6 +3,7 @@
 <head>
 	  <title> Supercar - Demande d'Essai </title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/essaie_style.css">
     <link rel="stylesheet" type="text/css" href="../style/header_css.css">
     <link rel="stylesheet" type="text/css" href="../style/footer_css.css">
@@ -37,7 +38,7 @@ if (!isset($_REQUEST['idvoiture'])) {
         <nav>
             <ul>
                 <li>
-                    <a href="../php/supercar_voiture.php" >Nos voiture </a>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
                 </li>
                 <li>
                     <a href="../php/supercar_essai.php">Demande d'Essai </a>

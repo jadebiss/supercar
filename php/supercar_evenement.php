@@ -3,9 +3,12 @@
 <meta charset="utf-8">
 <head>
 	<title> Supercar - Événement </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="..\style\evenement.css">
 	<link rel="stylesheet" type="text/css" href="..\style\header_css.css">
 	<link rel="stylesheet" type="text/css" href="..\style\footer_css.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -14,13 +17,13 @@
 
     <header>
         <a href="../index.php">
-        <img src="../images/Supercar.png" alt="SuperCar logo" class="logo">
+        <img src="../images/logo.png" alt="SuperCar logo" class="logo">
         </a>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
                 <li>
-                    <a href="../php/supercar_voiture.php" >Nos voiture </a>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
                 </li>
                 <li>
                     <a href="../php/supercar_essai.php">Demande d'Essai </a>
@@ -54,12 +57,12 @@
     </header>
 	
 
-<div class="info"> Les meilleurs modèles </div>
+<div class="info"> Les événements disponible </div>
 
-<div class="titre"> Notre sélection de voitures </div>
+<div class="titre"> Notre sélection d'événements </div>
 
-<div class="titre_description"> Nous offrons à nos clients des sensations de conduite incroyables. <br>
-C'est pourquoi nous n'avons que des voitures de classe mondiale. </div>
+<div class="titre_description"> Participez à notre événement et vivez des sensations de conduite incomparables. <br>
+Voici nos dernières nouveautés.</div>
     
     
 <?php

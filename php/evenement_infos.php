@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
   <html lang="fr">
-  
   <head>
     <link rel="stylesheet" type="text/css" href="../style/evenement_infos.css">
       <link rel="stylesheet" type="text/css" href="../style/header_css.css">
       <link rel="stylesheet" type="text/css" href="../style/footer_css.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap" rel="stylesheet">
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
       <title> Informations </title>
   
@@ -15,29 +17,48 @@
 
 	<!-- Header de la page -->
 
-	<header>
-    <div class="container">
-        <div class="navbar">
+  <header>
         <a href="../index.php">
-            <img src="../images/logo.png" alt="SuperCar logo" class="logo">
-        </a>        
-		<nav>
-        <ul>
-		<li><a href="../php/supercar_voiture.php">Nos voitures</a></li>
-				<li><a href="../php/supercar_essai.php">Essai</a></li>
-				<li><a href="../php/supercar_evenement.php">Évènements</a></li>
-				<li><a href="../php/supercar_contact.php"> Contactez-nous</a></li>
-        </ul>
+        <img src="../images/logo.png" alt="SuperCar logo" class="logo">
+        </a>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
+                </li>
+                <li>
+                    <a href="../php/supercar_essai.php">Demande d'Essai </a>
+                </li>
+                <li>
+                    <a href="../php/supercar_evenement.php"> Évènements </a>
+                </li>
+                <li>
+                    <a href="../php/supercar_contact.php"> Contactez-nous </a>
+                </li>
+                <li>
+                <?php
+                    session_start();
+
+                    if(isset($_SESSION['nom_utilisateur'])) {
+                        $nom_utilisateur = $_SESSION['nom_utilisateur'];
+                        echo " <a href='../php/supercar_connexion.php' class='menu-icon'> $nom_utilisateur </a>";
+                        } else {
+                            echo "<a href='../php/supercar_connexion.php' class='active'> Connexion </a></a>";                        
+                        }
+
+                ?>                 
+                </li>
+            </ul>
         </nav>
-        <a href="../php/supercar_connexion.php"><img src="../images/icon.png" class="menu-icon"></a>
-        </div>
-    </div>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
     </header>
 
  <?php 
-
-  session_start();
-
     include("bdconnect.php");
 
     $id = $_GET['idevenement'];
@@ -45,21 +66,26 @@
     $result = mysqli_query($bdd, $requete);
     $event = mysqli_fetch_assoc($result);
   
-    echo '<table class="container-product">';
-    echo '<tr>';
-    echo '<td>';
-    echo '<img class="image-event" name="image" src="../'.$event['image'].'">';
-    echo '</td>';
-    echo '<td class="content">';
-    echo '<h2 class="titre" name="titre">'. $event['titre'].' <br>';
-    echo '<span class="sous-titre" name="soustitre">'. $event['soustitre'] .'</span>';
+    echo '<div class="container">';
+    echo '<div class="detail">';
+    echo '<div class="image">';
+    echo '<img src="../' . $event['image'] . '">';
+    echo '</div>';
+    echo '<div class="content">';
+    echo '<h1 class="titre">' . $event['titre'] . '</h1>';
+    echo '<h2 class="h2">';
+    echo '<span class="span-h2" name="soustitre">' . $event['soustitre'] . '</span>';
     echo '</h2>';
-    echo '<p class="description" name="description_info">'. $event['description_info'] .'</p>';
-    echo '<a class="a-vehicule" href="../php/supercar_evenement.php"> ';
-    echo '<button class="button-reservation"> Retour a la page </button>';
+    echo '<div class="description">' . $event['description_info'] . '</div>';
+    echo '<button class="button">';
+    echo "<a href='../php/supercar_evenement.php' >";
+    echo 'Retour a la page precedente ';
     echo '</a>';
-    echo '</td>';
-    echo '</table>';
+    echo '</button>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
 
   ?>
   

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title> Supercar - Voiture </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../style/voiture_style.css">
     <link rel="stylesheet" type="text/css" href="../style/header_css.css">
     <link rel="stylesheet" type="text/css" href="../style/footer_css.css">
@@ -29,7 +30,7 @@
 
             </li>
                 <li>
-                    <a href="../php/supercar_voiture.php" >Nos voiture </a>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
                 </li>
                 <li>
                     <a href="../php/supercar_essai.php">Demande d'Essai </a>
@@ -64,6 +65,16 @@
 
 
 <!-- Selection de voiture par marque -->
+
+<div class="info"> Les meilleurs modèles </div>
+
+<div class="titre"> Notre sélection de voitures </div>
+
+<div class="titre_description"> Nous offrons à nos clients des sensations de conduite incroyables. <br>
+C'est pourquoi nous n'avons que des voitures de classe mondiale. </div>
+
+
+
 
     <section class="featured section">
         <div>

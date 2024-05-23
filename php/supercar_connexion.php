@@ -3,9 +3,11 @@
 <meta charset="utf-8">
 <head>
 	<title> Supercar - Connexion </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="..\style\connexion_style.css">
 	<link rel="stylesheet" type="text/css" href="..\style\header_css.css">
 	<link rel="stylesheet" type="text/css" href="..\style\footer_css.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +22,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="../php/supercar_voiture.php" >Nos voiture </a>
+                    <a href="../php/supercar_voiture.php" >Nos voitures </a>
                 </li>
                 <li>
                     <a href="../php/supercar_essai.php">Demande d'Essai </a>
@@ -79,7 +81,7 @@
 			
 	<!-- Formulaire d'Inscription -->
 
-			<form id="register"class="input-group" method="post" action="..\register.php">
+			<form id="register"class="input-group" method="post" action="register.php">
 				<input type="text" class="input-field" name="nom" placeholder="Nom" required>
 				<input type="text" class="input-field" name="prenom" placeholder="Prénom" required>
 				<input type="text" class="input-field" name="nom_utilisateur" placeholder="Nom d'utilisateur" required>
